@@ -1,0 +1,50 @@
+{
+  "name": "vue-initializers",
+  "version": "0.0.1",
+  "description": "Cleanly configure your Vue application as it boots",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "exit 0",
+    "lint": "eslint --fix .",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mhluska/vue-initializers.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-plugin",
+    "initializers",
+    "configuration"
+  ],
+  "author": "Maros Hluska <mhluska@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhluska/vue-initializers/issues"
+  },
+  "homepage": "https://github.com/mhluska/vue-initializers#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
