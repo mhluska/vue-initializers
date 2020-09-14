@@ -29,6 +29,7 @@ Install `VueInitializers` as early as possible in your `src/main.js` file:
 ```js
 import Vue from 'vue';
 import VueInitializers from 'vue-initializers';
+import App from '@/App';
 
 Vue.use(VueInitializers, {
   // Tells Webpack to read the contents of the `initializers` dir at build time.
@@ -37,8 +38,6 @@ Vue.use(VueInitializers, {
   // Prints optional debug information to console.
   // debug: true,
 });
-
-import App from '@/App';
 
 export default new Vue({
   render: (h) => h(App),
