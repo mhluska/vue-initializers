@@ -1,6 +1,6 @@
 {
   "name": "vue-initializers",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Cleanly configure your Vue application as it boots",
   "main": "dist/index.js",
   "scripts": {
