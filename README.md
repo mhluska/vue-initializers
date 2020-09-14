@@ -16,6 +16,10 @@
 
 ## Installation
 
+An initializer is a JavaScript file placed under `/src/initializers` in your
+application. You can use initializers to hold configuration settings that run as
+your application boots.
+
 ```sh
 npm install --save vue-initializers
 ```
@@ -42,10 +46,6 @@ export default new Vue({
 ```
 
 ## Usage
-
-An initializer is a JavaScript file placed under `/src/initializers` in your
-application. You can use initializers to hold configuration settings that run as
-your application boots.
 
 Initializers should export a function which accepts `Vue` as a parameter. A
 common use case for initializers is to hold initialization code for other
